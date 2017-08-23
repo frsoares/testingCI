@@ -22,7 +22,7 @@ class TestingCITests: XCTestCase {
     }
     
     func testDoTheMagic() {
-        let num = ViewController.doTheMagic(10)
+        let num = ViewController.doTheMagic(magicNumber: 10)
         XCTAssert(num == 42, "Does it provide the correct answer")
     }
     
