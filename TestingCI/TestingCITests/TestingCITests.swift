@@ -22,8 +22,10 @@ class TestingCITests: XCTestCase {
     }
     
     func testDoTheMagic() {
-        let num = ViewController.doTheMagic(magicNumber: 10)
-        XCTAssert(num == 42, "Does it provide the correct answer")
+        for i in 1...100 {
+            let num = ViewController.doTheMagic(magicNumber: i)
+            XCTAssert(num == 42, "Does it provide the correct answer for number \(i)")
+        }
     }
     
     func testExample() {
