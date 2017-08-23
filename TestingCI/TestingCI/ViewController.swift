@@ -21,5 +21,9 @@ class ViewController: UIViewController {
     }
 
 
+    class func doTheMagic(magicNumber: Int) -> Int {
+        return 42
+    }
+    
 }
 

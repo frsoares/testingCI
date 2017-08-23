@@ -21,6 +21,11 @@ class TestingCITests: XCTestCase {
         super.tearDown()
     }
     
+    func testDoTheMagic() {
+        let num = ViewController.doTheMagic(10)
+        XCTAssert(num == 42, "Does it provide the correct answer")
+    }
+    
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
